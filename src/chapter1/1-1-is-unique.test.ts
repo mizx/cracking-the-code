@@ -1,17 +1,35 @@
-import { isUnique } from "./1-1-is-unique";
+import { isUnique, isUniqueBits } from "./1-1-is-unique";
 
 describe('Chapter 1.1: Is Unique', () => {
-  it('should have unique input', () => {
-    const input = 'abc';
-    const result = isUnique(input);
+  describe('isUnique()', () => {
+    it('should return true', () => {
+      const input = 'abc';
+      const result = isUnique(input);
 
-    expect(result).toBe(true);
+      expect(result).toBe(true);
+    });
+
+    it('should return false', () => {
+      const input = 'abcc';
+      const result = isUnique(input);
+
+      expect(result).toBe(false);
+    });
   });
 
-  it('should not have unique input', () => {
-    const input = 'abcc';
-    const result = isUnique(input);
+  describe('isUniqueBits()', () => {
+    it('should return true', () => {
+      const input = 'abc';
+      const result = isUniqueBits(input);
 
-    expect(result).toBe(false);
+      expect(result).toBe(true);
+    });
+
+    it('should return false', () => {
+      const input = 'abcc';
+      const result = isUniqueBits(input);
+
+      expect(result).toBe(false);
+    });
   });
 });
