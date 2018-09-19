@@ -1,4 +1,4 @@
-import { urlify } from "./1-3-urlify";
+import { urlify } from "../1-3-urlify";
 
 describe('Chapter 1.3: URLify', () => {
   it('should replace spaces with "%20"', () => {

@@ -1,4 +1,4 @@
-import { checkPermutationArray as checkPermutation } from "./1-2-check-permutation";
+import { checkPermutationArray as checkPermutation } from "../1-2-check-permutation";
 
 describe('Chapter 1.2: Check Permutation', () => {
   it('should return true when given two inputs that are permutations', () => {

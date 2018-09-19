@@ -1,4 +1,4 @@
-import { isUnique, isUniqueBits } from "./1-1-is-unique";
+import { isUnique, isUniqueBits } from "../1-1-is-unique";
 
 describe('Chapter 1.1: Is Unique', () => {
   describe('isUnique()', () => {
