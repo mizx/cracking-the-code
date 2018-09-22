@@ -1,3 +1,7 @@
+/**
+ * Time: O(n) 
+ * Space: O(1)
+ */
 export const urlify = (input: string[], trueLength: number) => {
   let spaceCount = 0;
 

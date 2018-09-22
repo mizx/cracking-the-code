@@ -27,5 +27,6 @@
       "json",
       "node"
     ]
-  }
+  },
+  "dependencies": {}
 }
