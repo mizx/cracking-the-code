@@ -39,6 +39,24 @@ describe('Chapter 1.7: Rotate Matrix', () => {
     expect(result).toEqual(expected);
   });
   
+  it('should rotate 4x4 matrix', () => {
+    const matrix = [
+      [ 1, 2, 3, 4],
+      [12,13,14, 5],
+      [11,16,15, 6],
+      [10, 9, 8, 7]
+    ];
+    const expected = [
+      [10,11,12, 1],
+      [ 9,16,13, 2],
+      [ 8,15,14, 3],
+      [ 7, 6, 5, 4]
+    ];
+    const result = rotateMatrix(matrix);
+
+    expect(result).toEqual(expected);
+  });
+  
   it('should rotate 5x5 matrix', () => {
     const matrix = [
       [ 1, 2, 3, 4, 5],
